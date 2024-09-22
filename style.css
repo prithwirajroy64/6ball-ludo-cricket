@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(46, 41, 41);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.main {
+  height: 70%;
+  width: 40%;
+  background: rgb(102, 143, 42);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.runs {
+  background-color: #fff;
+  color: #000;
+  width: fit-content;
+  padding: 5px 12px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.target {
+  background-color: #000;
+  color: #fff;
+  width: fit-content;
+  padding: 5px 12px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.scoreBoard {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.playDiv {
+  width: 100%;
+  position: absolute;
+  bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ballsRun {
+  background-color: #cccccc;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.ball {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#playBtn {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+#playBtn img {
+  width: 35px;
+}
+
+.resultDiv {
+  height: 150px;
+  width: 150px;
+  background-color: #ffffff22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.resultDiv p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+.resultDiv img {
+  height: 80px;
+  border-radius: 20px;
+}
+
+#playAgain {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  background-color: #000;
+  color: #fff;
+  padding: 2px 7px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    background-color: lightblue;
+  }
+  .main {
+    width: 90%;
+    height: 90%;
+    border-radius: 0px;
+  }
+}
